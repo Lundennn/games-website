@@ -156,7 +156,8 @@ header nav ul li.btn a:hover {
     font-weight: 600;
 }
 
-.trending .see-all {
+.trending .see-all,
+.projects .see-all {
     color: #fff;
     background: #25211d;
     border-radius: 5px;
@@ -169,7 +170,8 @@ header nav ul li.btn a:hover {
 }
 
 /* анимация при наведении */
-.trending .see-all:hover {
+.trending .see-all:hover,
+.projects .see-all:hover {
     transform: scale(1.1);
 }
 
@@ -222,4 +224,71 @@ header nav ul li.btn a:hover {
 .banner img {
     width: 100%;
     margin-bottom: 30px;
+}
+
+.features {
+    background: url('/images/background-feature2.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+/* если идет перечисление элементов, к которым должно быть применимо свойство, то перечисляются они через запятую */
+.features h3, 
+.features p {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h3 {
+    font-size: 30px;
+}
+
+.features .info {
+    display: flex;
+    /* ранее использовали значение спайс-битвин, которое делало равные отступы от объектов, задействуя всю ширину */
+    /* выравнивает изображения о центру */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img {
+    margin-bottom: 15px;
+}
+
+.projects {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.projects p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 30px 0 50px 0;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.projects .see-all {
+    float: none;
+    width: 60px;
+    margin: auto;
 }
