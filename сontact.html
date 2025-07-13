@@ -13,19 +13,48 @@
         <span class="logo">Logo</span>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">News</a></li>
-                <li class="btn"><a href="/сontact.html">Contact us</a></li>
+                <li class="btn"><a href="сontact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container hero-contacts">
         <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <img src="/images/map.png" alt="Карта мира">
+    </div>
+
+    <div class="feedback">
+        <div class="container">
+            <h2>Say hello</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing.</p>
+
+            <form action="">
+                <div class="inline">
+                    <div>
+                        <label for="contact-first-name">First name</label>
+                        <input id="contact-first-name" type="text">
+                    </div>
+                    <div>
+                        <label for="contact-last-name">Last name</label>
+                        <input id="contact-last-name" type="text">
+                    </div>
+                </div>
+
+                <label for="contact-email">Email Address</label>
+                <input id="contact-email" type="email" class="one-line">
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" class="one-line"></textarea>
+
+                <!-- type="button" при нем страница не будет перезагружаться -->
+                <button type="button" class="btn">Get in touch</button>
+            </form>
+        </div>
     </div>
 
     <div class="container email">

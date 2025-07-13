@@ -131,7 +131,8 @@ header nav ul li.btn a:hover,
 }
 
 .hero--info .btn,
-.hero-about .info .btn {
+.hero-about .info .btn,
+.feedback form .btn {
     background: #FA9021;
     color: #fff;
     border-radius: 50px;
@@ -142,7 +143,8 @@ header nav ul li.btn a:hover,
 }
 
 .hero--info .btn:hover,
-.hero-about .info .btn:hover {
+.hero-about .info .btn:hover,
+.feedback form .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -435,6 +437,98 @@ header nav ul li.btn a:hover,
     border-radius: 10px;
     padding: 50px 35px;
     background: #1C140F;
+}
+
+/* Страница контакты */
+.hero-contacts h1 {
+    text-align: center;
+    font-size: 33;
+    font-weight: 600;
+    margin: 20px 0;
+    padding-top: 20px;
+}
+
+.hero-contacts p {
+    text-align: center;
+    font-size: 16;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.hero-contacts img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.feedback p {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div{
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+    background: #2c2420;
+    border-radius: 9px;
+    border: 0.6px solid #4F4F4F;
+    /* делает все поля блоками, поэтому теперь они не отображаются на одной линии с текстом */
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 95%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.feedback form .btn {
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    float: right;
+    position: relative;
+    right: 8px;
 }
 
 /* =============================================================================== */
